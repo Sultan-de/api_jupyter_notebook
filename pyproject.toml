@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "api_jupyter_notebook"
+version = "0.1.0"
+description = ""
+authors = ["SMukanov <smukanov@beeline.kz>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+SQLAlchemy = "^1.4.41"
+nbformat = "^5.5.0"
+ansiwrap = "^0.8.4"
+PyYAML = "^6.0"
+entrypoints = "^0.4"
+tenacity = "^8.0.1"
+python-dateutil = "^2.8.2"
+nbclient = "^0.6.8"
+Flask = "^2.2.2"
+Flask-RESTful = "^0.3.9"
+nbconvert = "^7.0.0"
+abs = "^0.0.0"
+adl = "^0.1.5"
+black = "^22.8.0"
+gcsfs = "^2022.8.2"
+pyarrow = "^9.0.0"
+PyGithub = "^1.55"
+tqdm = "^4.64.1"
+traitlets = "^5.4.0"
+requests= "^2.28.1"
+psycopg2-binary = ""
+Flask-Cors = "^3.0.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

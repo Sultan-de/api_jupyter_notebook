@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+
+  postgres:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespw
+    ports:
+      - '5432:5432'
+    env_file:
+      - db_credentials.env
+    #volumes:
+    #  - postgres:/var/lib/postgresql/data
+  app:
+    build: .
+    #environment:
+    ##  WAIT_HOSTS: postgres:5432
+     # WAIT_AFTER: 15
+    ports:
+      - 5000:5000
+    depends_on:
+      - postgres
+    #command: >
+    #  sh -c "python main.py"
+    restart: always
+
+
+
