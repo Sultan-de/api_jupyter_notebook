@@ -3,7 +3,7 @@ from base import Base
 
 
 class JupyterDb(Base):
-    __tablename__ = 'jupyter_db'
+    __tablename__ = "jupyter_db"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String())
